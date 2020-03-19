@@ -15,6 +15,7 @@ select [order].id, shipper.companyName
 
 -- Display the name and quantity of the products ordered in order with Id 10251. Sort by ProductName. Shows 3 records.
 
+--showing I can use aliases but prefer not to
 select p.productName, o.quantity
     from orderDetail as o
     join product as p on p.id = o.productId
